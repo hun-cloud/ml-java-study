@@ -1,4 +1,4 @@
-package com.study.mlsoft.work.exception;
+package com.study.mlsoft.work.exception.exception;
 
 public class MemberNotFoundException extends RuntimeException{
 

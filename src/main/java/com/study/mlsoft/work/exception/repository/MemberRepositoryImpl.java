@@ -1,19 +1,17 @@
 package com.study.mlsoft.work.exception.repository;
 
-import com.study.mlsoft.work.exception.MemberNotFoundException;
+import com.study.mlsoft.work.exception.exception.MemberNotFoundException;
 import com.study.mlsoft.work.exception.dto.Member;
 import org.springframework.stereotype.Repository;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStreamReader;
 
 @Repository
 public class MemberRepositoryImpl implements MemberRepository{
 
     private static final String FILE_PATH = "파일 정보";
-
 
     @Override
     public Member findById(String id) {
